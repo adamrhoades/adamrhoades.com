@@ -73,7 +73,7 @@
   
   
   var get_photoset_url = function(id){
-    return "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&format=json&api_key=" + opts.api_key + "&photoset_id=" + id + "&per_page=10";
+    return "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&format=json&api_key=" + opts.api_key + "&photoset_id=" + id + "&per_page=" + opts.photos_per_page;
   };
   
 })(jQuery);
