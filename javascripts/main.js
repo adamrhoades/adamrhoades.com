@@ -3,7 +3,7 @@
   var opts = {
     api_key: "b516f4814ad521d197122a5dcc074272",
     maxHeight: 200,
-    photos_per_page: 10
+    photos_per_page: 1000
   };
   
   var maxImgHeight = 200;
