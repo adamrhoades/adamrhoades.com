@@ -1,0 +1,35 @@
+/*----------------------------------------------------------------------------
+  Layout
+----------------------------------------------------------------------------*/
+html, body { height: 100%; }
+body { color: #333; font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; min-height: 100%; }
+
+
+a:link, a:visited { color: #667f96; text-decoration: none; }
+a:hover { color: #465f76; }
+
+
+.container { height: 100%; position: relative; }
+.clear { clear: both; }
+
+
+#sidebar-container, h1 { position: fixed; top: 0; width: 210px; z-index: 1000; }
+
+h1 { display: block; height: 95px; margin-left: 5px; width: 205px; z-index: 1001; }
+h1 a { background: transparent url(/images/logo.png) no-repeat; display: block; height: 97px; margin: 10px; text-indent: -9999px; }
+#sidebar-container { background: #fff; height: 100%; }
+ul#sidebar { border-left: 7px double #333; height: 100%; left: 0; position: absolute; top: 0; width: 200px; }
+
+h2 { border-bottom: 1px solid #eee; font: bold 17px "Trebuchet MS", sans-serif; margin: 35px 0 10px; padding-bottom: 5px; text-shadow: 0 0 1px #fff; }
+
+ul#sidebar > li { padding: 0 10px; }
+ul#sidebar > li:first-child { margin-top: 147px; }
+
+ul#sidebar li#footer { color: #999; font-size: 11px; margin-top: 35px; }
+ul#sidebar li#footer a { color: #869fb6; }
+ul#sidebar li#footer a:hover { text-decoration: underline; }
+
+
+ul#photos { height: 100%; left: 20%; overflow: hidden; position: absolute; top: 0; width: 80%; }
+ul#photos li { background: #fff; display: table-cell; padding: 10px 5px; vertical-align: middle; }
+ul#photos li:first-child { padding-left: 0; }
