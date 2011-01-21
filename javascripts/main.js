@@ -1,3 +1,8 @@
+/**
+ * Flickr jQuery Plugin
+ *
+ * Copyright (c) 2011 Matt Kirman <matt@mattkirman.com>, Adam Rhoades
+ */
 (function($, undefined){
   
   var opts = {
@@ -38,6 +43,8 @@
           add_image_to_container(photos[i]);
         }
       }
+      
+      $(window).trigger('flickr_loaded');
     });
   };
   
@@ -60,4 +67,39 @@
     return "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&format=json&api_key=" + opts.api_key + "&photoset_id=" + id + "&per_page=" + opts.photos_per_page;
   };
   
+  
+  var startHorizontalHinting = function(){
+    
+  }
+  
+})(jQuery);
+
+
+/**
+ * Scroll modifications.
+ */
+(function($){
+  $(window).bind('flickr_loaded', function(){
+    var body = $('body');
+    
+    var scrolled = false;
+    var scrollHint = function(){
+      body.scrollLeft( body.scrollLeft() + 1 );
+      if (!scrolled) setTimeout(scrollHint, 50);
+    };
+    setTimeout(scrollHint, 3500);
+    
+    
+    var scrollTimeout;
+    var didScroll = function(e){
+      scrolled = true;
+      
+      if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+        body.scrollLeft( body.scrollLeft() - e.wheelDelta );
+        e.preventDefault();
+      }
+    };
+    $(window).bind('mousewheel', didScroll);
+    
+  });
 })(jQuery);
