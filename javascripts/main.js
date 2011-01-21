@@ -67,11 +67,6 @@
     return "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&format=json&api_key=" + opts.api_key + "&photoset_id=" + id + "&per_page=" + opts.photos_per_page;
   };
   
-  
-  var startHorizontalHinting = function(){
-    
-  }
-  
 })(jQuery);
 
 
