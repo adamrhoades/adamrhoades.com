@@ -30,7 +30,7 @@
     
     $.getJSON(url + "&jsoncallback=?", function(data){
       flickrData = data;
-      $('.loader').remove();
+      $('#loader').remove();
       
       if (data.stat == "ok" && data.photoset.total > 0) {
         var photos = data.photoset.photo;
@@ -46,29 +46,13 @@
     var img_src = 'http://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_b.jpg';
     var img_href = 'http://www.flickr.com/photos/' + flickrData.photoset.ownername + '/' + photo.id + '/in/' + opts.photoset;
     
-    var li = $('<li/>');
+    var td = $('<td/>');
     var a = $('<a/>').attr('href', img_href).attr('target', '_blank');
     var img = $('<img/>').attr('src', img_src).css('maxHeight', maxImgHeight);
     
     img.appendTo(a);
-    a.appendTo(li);
-    
-    img.one('load', function(){
-      if (kFirst) {
-        var width = $(this).width();
-        kFirst = false;
-      } else {
-        var width = container.width() + $(this).width();
-      }
-      
-      container.width(width);
-    }).each(function(){
-      if (this.complete) {
-        $(this).load();
-      }
-    });
-    
-    li.appendTo(container);
+    a.appendTo(td);
+    td.appendTo('#photo-list');
   };
   
   

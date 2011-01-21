@@ -30,6 +30,8 @@ ul#sidebar li#footer a { color: #869fb6; }
 ul#sidebar li#footer a:hover { text-decoration: underline; }
 
 
-ul#photos { height: 100%; left: 20%; overflow: hidden; position: absolute; top: 0; width: 80%; }
-ul#photos li { background: #fff; display: table-cell; padding: 10px 5px; vertical-align: middle; }
-ul#photos li:first-child { padding-left: 0; }
+table#photos { height: 100%; left: 20%; overflow: hidden; position: absolute; top: 0; width: 80%; }
+table#photos td { background: #fff; display: table-cell; padding: 0 5px 10px; vertical-align: middle; }
+table#photos td#loader { background: transparent url(/images/ajax-loader.gif) no-repeat 50% 50%; width: 100%; }
+table#photos td:first-child { padding-left: 0; }
+table#photos td:last-child { padding-right: 10px; }
