@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>About | Adam Rhoades</title>
+  <title>Adam Rhoades</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
   <meta name="copyright" content="Copyright (c) 2011 Adam Rhoades" />
   
@@ -50,8 +50,20 @@
       </ul>
     </div>
     
-    
+    <table id="photos">
+      <tr id="photo-list">
+        <td id="loader"></td>
+      </tr>
+    </table>
   </div>
+  
+  <script type="text/javascript" src="/javascripts/main.js"></script>
+  <script type="text/javascript">
+    $("#photos").flickr({
+      photoset: "72157625806872233",
+      maxHeight: 629
+    });
+  </script>
   
   <script type="text/javascript">
     
