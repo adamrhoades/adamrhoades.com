@@ -35,3 +35,7 @@ table#photos td { background: #fff; display: table-cell; padding: 0 5px 10px; ve
 table#photos td#loader { background: transparent url(/images/ajax-loader.gif) no-repeat 50% 50%; width: 100%; }
 table#photos td:first-child { padding-left: 0; }
 table#photos td:last-child { padding-right: 10px; }
+
+
+#about { left: 30%; position: absolute; top: 150px; width: 60%; }
+#about p { margin-bottom: 20px; }
