@@ -37,5 +37,5 @@ table#photos td:first-child { padding-left: 0; }
 table#photos td:last-child { padding-right: 10px; }
 
 
-#about { left: 25%; position: absolute; top: 150px; width: 60%; }
+#about { left: 23%; position: absolute; top: 150px; width: 60%; }
 #about p { margin-bottom: 20px; }
