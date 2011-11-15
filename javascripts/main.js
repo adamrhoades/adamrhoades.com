@@ -89,10 +89,10 @@
     var didScroll = function(e){
       scrolled = true;
       
-      if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-        body.scrollLeft( body.scrollLeft() - e.wheelDelta );
-        e.preventDefault();
-      }
+      //if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+      //  body.scrollLeft( body.scrollLeft() - e.wheelDelta );
+      //  e.preventDefault();
+      //}
     };
     $(window).bind('mousewheel', didScroll);
     
