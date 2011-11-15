@@ -1,0 +1,36 @@
+<h1><a href="http://adamrhoades.com/" rel="me">Adam Rhoades</a></h1>
+
+    <div id="sidebar-container">
+      <ul id="sidebar">
+        <li>
+          <h2>Photographs</h2>
+          <ul>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="/portrait.html">Portrait</a></li>
+            <li><a href="/model.html">Model</a></li>
+            <li><a href="/landscape.html">Landscape</a></li>
+          </ul>
+        </li>
+        
+        <li>
+          <h2>Projects</h2>
+          <ul>
+            <li><a href="/sleepers.html">Sleepers</a></li>
+            <li><a href="/new-york-city.html">New York City</a></li>
+          </ul>
+        </li>
+        
+        <li>
+          <h2>Information</h2>
+          <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="http://twitter.com/adamrhoades">Twitter</a></li>
+            <li><a href="http://www.flickr.com/photos/adamrhoades/">Flickr</a></li>
+          </ul>
+        </li>
+        
+        <li id="footer">
+          Copyright &copy; 2011 <a href="http://adamrhoades.com/">Adam Rhoades</a>
+        </li>
+      </ul>
+    </div>

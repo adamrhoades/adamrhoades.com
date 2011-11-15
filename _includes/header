@@ -1,0 +1,10 @@
+<title>{% if page.title %}{{ page.title }} | {% endif %}Adam Rhoades</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta name="copyright" content="Copyright (c) 2011 Adam Rhoades" />
+  
+  <link href="/favicon.png" rel="shortcut icon" type="image/png" />
+  
+  <link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/stylesheets/main.css" type="text/css" />
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>

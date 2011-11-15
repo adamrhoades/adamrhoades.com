@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include header %}
+</head>
+
+<body>
+  <div class="container">
+    {% include sidebar %}
+
+    <table id="photos">
+      <tr id="photo-list">
+        <td id="loader"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="/javascripts/main.js"></script>
+  <script type="text/javascript">
+    $("#photos").flickr({
+      photoset: "{{ page.flickr_photoset }}",
+      maxHeight: {% if page.flickr_maxHeight %}{{ page.flickr_maxHeight }}{% else %}629{% endif %}
+    });
+  </script>
+
+  {% include analytics %}
+</body>
+</html>
