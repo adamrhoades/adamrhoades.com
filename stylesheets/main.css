@@ -22,6 +22,8 @@ ul#sidebar { border-left: 7px double #333; height: 100%; left: 0; position: abso
 
 h2 { border-bottom: 1px solid #eee; font: bold 17px "Trebuchet MS", sans-serif; margin: 35px 0 10px; padding-bottom: 5px; text-shadow: 0 0 1px #fff; }
 
+p { margin-bottom: 20px; }
+
 ul#sidebar > li { padding: 0 10px; }
 ul#sidebar > li:first-child { margin-top: 147px; }
 
@@ -33,9 +35,9 @@ ul#sidebar li#footer a:hover { text-decoration: underline; }
 table#photos { height: 100%; left: 20%; overflow: hidden; position: absolute; top: 0; width: 80%; }
 table#photos td { background: #fff; display: table-cell; padding: 0 5px 10px; vertical-align: middle; }
 table#photos td#loader { background: transparent url(/images/ajax-loader.gif) no-repeat 50% 50%; width: 100%; }
+table#photos td .caption { padding: 0 20px; width: 340px; }
 table#photos td:first-child { padding-left: 0; }
 table#photos td:last-child { padding-right: 10px; }
 
 
-#about { left: 23%; position: absolute; top: 150px; width: 60%; }
-#about p { margin-bottom: 20px; }
+#about { left: 23%; padding-bottom: 30px; position: absolute; top: 150px; width: 60%; }

@@ -15,11 +15,16 @@
     </table>
   </div>
 
+  <div id="caption" style="display:none">
+    {{ content }}
+  </div>
+
   <script type="text/javascript" src="/javascripts/main.js"></script>
   <script type="text/javascript">
     $("#photos").flickr({
       photoset: "{{ page.flickr_photoset }}",
-      maxHeight: {% if page.flickr_maxHeight %}{{ page.flickr_maxHeight }}{% else %}629{% endif %}
+      maxHeight: {% if page.flickr_maxHeight %}{{ page.flickr_maxHeight }}{% else %}629{% endif %},
+      {% if page.caption %}caption: '#caption',{% endif %}
     });
   </script>
 
